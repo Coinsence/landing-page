@@ -1,0 +1,47 @@
+input {
+  outline: none;
+  border: none;
+}
+
+
+button {
+  outline: none;
+  border: none;
+}
+
+.newsletter {
+  display: inline-block;
+  position: relative;
+}
+
+.newsletter input {
+  width: 610px;
+  height: 54px;
+  padding: 0 28px;
+
+  font-size: 15px;
+
+  border: #d7d7d7 solid 1px;
+  border-radius: 32px;
+}
+
+.newsletter button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  text-transform: uppercase;
+
+  padding: 0 28px;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #fff;
+  background-color: #28aa69a8;
+
+  border-radius: 32px;
+
+  cursor: pointer;
+}

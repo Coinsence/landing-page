@@ -102,8 +102,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  color: #1e1e1e;
+  background-color: #eff1f0;
+}
+
+nav {
+  width: 100%;
+  height: 93px;
+  position: fixed;
+}
+
+nav a {
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 23px 24px;
+}
+
+nav .brand {
+  margin-left: 27px;
+  margin-right: 124px;
+}
+
+nav a.right {
+  float: right;
+  padding: 37px 59px;
+}
 
 
+section {
+  height: 100vh;
+}
+
+section.landing {
+  padding: 0 168px;
+}
+
+section.landing h1 {
+  padding-top: 361px;
+}
+
+section.landing .newsletter {
+  margin-top: 90px;
+}
 
 
 

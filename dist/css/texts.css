@@ -3,75 +3,95 @@
  * This css contain the text setup styling
  */
 
+h1, h2, h3, h4, h5, h6, p, span {
+  margin: 0;
+}
+
 
 
 h1 {
   font-size: 85px;
 }
 
-h1.landing {
+h2 {
   font-size: 85px;
 }
 
-h2 {
+h3 {
   font-size: 65px;
 }
 
-h3 {
+h4 {
   font-size: 25px;
 }
 
-h4 {
-  color: #28AA69;
+h5 {
+  color: #28aa69;
   font-size: 12px;
 }
 
 
 h1 span {
-  color: #28AA69;
+  color: #28aa69;
 }
 
 h2 span {
-  color: #28AA69;
+  color: #28aa69;
 }
 
-
+h3 span {
+  color: #28aa69;
+}
 
 
 h1 + p {
-  font-size: 21px;
-}
-
-h1.landing + p {
   font-size: 18px;
 }
 
 h2 + p {
-  font-size: 18px;
+  font-size: 21px;
 }
 
 h3 + p {
   font-size: 18px;
 }
 
+h4 + p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 14px;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+a.primary {
+  color: #fff;
+  background-color: #28aa69;
+}
+
+a.secondary {
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
 
 @media only screen and (max-width: 768px) {
 
-  h1 { }
-
-  h1.landing {
+  h1 {
     font-size: 40px;
   }
 
-  h1.landing + p {
+  h1 + p {
     font-size: 13px;
   }
 
-  h1 + p {
+  h2 + p {
     font-size: 21px;
   }
 
-  h2 + p {
+  h3 + p {
     font-size: 16px;
   }
 }
@@ -79,34 +99,34 @@ h3 + p {
 @media only screen and (max-width: 375px) {
 
   h1 {
-    font-size: 50px;
-  }
-
-  h1.landing {
     font-size: 30px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   h4 {
-    font-size: 10px;
+    font-size: 18px;
   }
 
-  h1.landing + p {
+  h5 {
     font-size: 10px;
   }
 
   h1 + p {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   h2 + p {
+    font-size: 16px;
+  }
+
+  h3 + p {
     font-size: 12px;
   }
 
