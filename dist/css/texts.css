@@ -1,0 +1,114 @@
+/* texts.css */
+/*
+ * This css contain the text setup styling
+ */
+
+
+
+h1 {
+  font-size: 85px;
+}
+
+h1.landing {
+  font-size: 85px;
+}
+
+h2 {
+  font-size: 65px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  color: #28AA69;
+  font-size: 12px;
+}
+
+
+h1 span {
+  color: #28AA69;
+}
+
+h2 span {
+  color: #28AA69;
+}
+
+
+
+
+h1 + p {
+  font-size: 21px;
+}
+
+h1.landing + p {
+  font-size: 18px;
+}
+
+h2 + p {
+  font-size: 18px;
+}
+
+h3 + p {
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  h1 { }
+
+  h1.landing {
+    font-size: 40px;
+  }
+
+  h1.landing + p {
+    font-size: 13px;
+  }
+
+  h1 + p {
+    font-size: 21px;
+  }
+
+  h2 + p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h1.landing {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  h1.landing + p {
+    font-size: 10px;
+  }
+
+  h1 + p {
+    font-size: 16px;
+  }
+
+  h2 + p {
+    font-size: 12px;
+  }
+
+
+}
