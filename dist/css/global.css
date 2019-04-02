@@ -45,3 +45,14 @@ button {
 
   cursor: pointer;
 }
+
+.vertical-line {
+  height: 6vh;
+  width: 1px;
+  margin: 24px auto 0;
+  background-color: #707070;
+}
+
+.h-unspecified {
+  height: auto;
+}
