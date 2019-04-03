@@ -146,7 +146,7 @@ section.landing {
 }
 
 section.landing h1 {
-  padding-top: 261px;
+  padding-top: 28vh;
 }
 
 section.landing .newsletter {
@@ -193,16 +193,68 @@ section.values .value {
   height: 100vh;
 }
 
-section.values .value > div {
-  width: 50%;
-  height: 100%;
-  float: left;
+/*section.values .value > div {*/
+  /*width: 50%;*/
+  /*height: 100%;*/
+/*}*/
+
+/*section.values .value:nth-child(odd) .text,*/
+/*section.values .value:nth-child(even) .image {*/
+  /*float: left;*/
+/*}*/
+
+/*section.values .value:nth-child(odd) .image,*/
+/*section.values .value:nth-child(even) .text {*/
+  /*float: right;*/
+/*}*/
+
+section.values .value {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
 }
 
-section.values .value div.image {
+
+section.values .value:nth-child(odd) {
+  background-position: right;
+}
+
+section.values .value:nth-child(even) {
+  background-position: left;
+}
+
+section.values .value:nth-child(1), section.values .value:nth-child(1) .image {
+  background-image: url("../img/blocks/1.png");
+}
+
+section.values .value:nth-child(2), section.values .value:nth-child(2) .image {
+  background-image: url("../img/blocks/2.png");
+}
+
+section.values .value:nth-child(3), section.values .value:nth-child(3) .image {
+  background-image: url("../img/blocks/3.png");
+}
+
+section.values .value:nth-child(4), section.values .value:nth-child(4) .image {
+  background-image: url("../img/blocks/4.png");
+}
+
+section.values .value .text {
   background-color: #555555;
+  height: 100%;
 }
 
+section.values .value .image {
+  display: none;
+}
+
+section.values .value:nth-child(odd) .text {
+  margin-right: 50%;
+}
+
+section.values .value:nth-child(even) .text {
+  margin-left: 50%;
+}
 
 
 
@@ -210,18 +262,20 @@ section.values .value div.image {
 
 @media only screen and (max-width: 768px) {
 
+
   nav a.primary,
   nav a.secondary {
     display: none;
   }
 
+
   section.landing {
-    padding: 0;
+    padding: 10vh 0 0;
     text-align: center;
   }
 
   section.landing h1 {
-    padding-top: 158px;
+    padding-top: 22vh;
   }
 
   section.landing .newsletter {
@@ -241,6 +295,31 @@ section.values .value div.image {
   section.landing .links {
     display: block;
   }
+
+  section.values .value {
+    background-image: none !important;
+  }
+
+  section.values .value .text {
+    margin: 0 !important;
+    height: 50%;
+  }
+
+  section.values .value .image {
+    display: block;
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 38%;
+  }
+
+
+
+  /*section.values .value > div {*/
+    /*width: 100%;*/
+    /*height: 50%;*/
+    /*float: none;*/
+  /*}*/
 
 }
 
