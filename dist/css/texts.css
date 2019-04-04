@@ -4,6 +4,7 @@
  */
 
 h1, h2, h3, h4, h5, h6, p, span {
+  line-height: 1;
   margin: 0;
 }
 
@@ -11,6 +12,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 h1 {
   font-size: 85px;
+  line-height: 0.75;
 }
 
 h2 {
@@ -32,7 +34,7 @@ h5 {
 
 h6 {
   color: #1e1e1e;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 
@@ -51,6 +53,8 @@ h3 span {
 
 h1 + p {
   font-size: 18px;
+  line-height: 1.25;
+  margin-top: 4vh;
 }
 
 h2 + p {
