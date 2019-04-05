@@ -15,12 +15,11 @@ button {
 }
 
 .newsletter input {
-  width: 610px;
-  height: 54px;
+  width: 31.77083333333333vw;
+  min-width: 440px;
+  height: 5vh;
   padding: 0 28px;
-
   font-size: 15px;
-
   border: #d7d7d7 solid 1px;
   border-radius: 32px;
 }
@@ -39,10 +38,47 @@ button {
   font-weight: bold;
 
   color: #fff;
-  background-color: #28aa69a8;
+  background-color: rgba(40, 170, 105, 0.66);
 
   border-radius: 32px;
 
+  cursor: pointer;
+}
+
+.newsletter.large input {
+  width: 44.89583333333333vw;
+  font-size: 18px;
+}
+
+.newsletter.large button {
+  font-size: 12px;
+}
+
+.newsletter.small input {
+  width: 21.45833333333333vw;
+  min-width: auto;
+  padding: 0 24px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: #424242 solid 1px;
+}
+
+.newsletter.small input::placeholder,
+.newsletter.small input:-ms-input-placeholder,
+.newsletter.small input::-ms-input-placeholder
+{
+  opacity: 0.35;
+}
+
+.newsletter.small svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.9vh 24px;
+  background-color: rgba(40, 170, 105, 0.28);
+  border-radius: 32px;
   cursor: pointer;
 }
 
@@ -62,3 +98,164 @@ button {
 .h-unspecified {
   height: auto;
 }
+
+
+.slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 14px 44px;
+  border: #c8c8c8 solid 1px;
+  background-color: #fff;
+  line-height: 0;
+  border-radius: 14px;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /*margin: 0 5px;*/
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 8px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #28aa69;
+}
+
+.slick-actions-wrapper {
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slick-actions {
+  position: relative;
+  display: inline-block;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 0;
+  padding: 18px 24px;
+  border: #28aa69 solid 1px;
+  border-radius: 25px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -28px;
+}
+
+.slick-next {
+  right: -28px;
+}
+
+.slick-prev > *,
+.slick-next > * {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .newsletter input {
+    width: 28.64583333333333vw;
+    height: 3.5vh;
+    font-size: 12px;
+  }
+
+  .newsletter.large input {
+    width: 32.29166666666667vw;
+    height: 5.5vh;
+    font-size: 16px;
+  }
+
+  .newsletter button {
+    font-size: 10px;
+  }
+
+  .newsletter.large button {
+    font-size: 11px;
+  }
+
+  .newsletter.small input {
+    font-size: 14px;
+    height: 5.386vh;
+    width: 42.1875vw;
+  }
+
+  .newsletter.small svg {
+    padding: 2.1vh 24px;
+  }
+
+}
+
+.socials a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 0 0.625vw;
+}
+
+a.github {
+  background-image: url("../img/footer/link-github.png");
+}
+
+a.facebook {
+  background-image: url("../img/footer/link-facebook.png");
+}
+
+a.twitter {
+  background-image: url("../img/footer/link-twitter.png");
+}
+
+a.linkedin {
+  background-image: url("../img/footer/link-linkedin.png");
+}
+
+a.instagram {
+  background-image: url("../img/footer/link-instagram.png");
+}
+
+

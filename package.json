@@ -64,5 +64,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/h5bp/html5-boilerplate.git"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
   }
 }

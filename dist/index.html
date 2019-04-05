@@ -11,8 +11,14 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!--<link rel="stylesheet" href="css/vendor/owl.carousel.min.css">-->
+  <!--<link rel="stylesheet" href="css/vendor/owl.theme.default.min.css">-->
+  <!--<link rel="stylesheet" href="css/vendor/owl.theme.green.min.css">-->
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <!--<link rel="stylesheet" href="css/vendor/slick-theme.css">-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/texts.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -30,14 +36,19 @@
 
 
   <nav>
-    <a class="brand" href="#"><img src="img/logo.png"></a>
-    <a href="#">How it works</a>
-    <a href="#">About us</a>
-    <a href="#">Blog</a>
-    <a href="#">Github</a>
-
-    <a class="right primary" href="#">Join us</a>
-    <a class="right secondary" href="#">Login</a>
+    <div class="brand">
+      <a href="#"><img src="img/logo.png"></a>
+    </div>
+    <ul class="left">
+      <li><a href="#"><span>How it works</span></a></li>
+      <li><a href="#"><span>About us</span></a></li>
+      <li><a href="#"><span>Blog</span></a></li>
+      <li><a href="#"><span>Github</span></a></li>
+    </ul>
+    <ul class="right">
+      <li><a class="primary" href="#"><span>Join us</span></a></li>
+      <li><a class="secondary" href="#"><span>Login</span></a></li>
+    </ul>
   </nav>
 
   <section class="landing">
@@ -51,7 +62,7 @@
       <button>Join the community</button>
     </div>
     <div class="scroll">
-      <h6>Start scrolling to see how easy it is to get started</h6>
+      <h6 class="of-scroll">Start scrolling to see how easy it is to get started</h6>
       <div class="vertical-line"></div>
     </div>
     <div class="links">
@@ -62,7 +73,7 @@
 
   <section class="values-1 h-unspecified">
     <div class="partners">
-      <h6>Supporting organisations and Partners</h6>
+      <h6 class="of-partners">Supporting organisations and Partners</h6>
       <img src="img/blocks-1/partners/harvard-university.png">
       <img src="img/blocks-1/partners/hp.png">
       <img src="img/blocks-1/partners/github.png">
@@ -74,7 +85,7 @@
       <div class="content">
         <div class="content-header">
           <div class="horizontal-line"></div>
-          <h6 class="numeration">01</h6>
+          <h6 class="acc-numeration">01</h6>
         </div>
         <div class="content-body">
           <div class="acc-btn">
@@ -96,7 +107,7 @@
       <div class="content">
         <div class="content-header">
           <div class="horizontal-line"></div>
-          <h6 class="numeration">02</h6>
+          <h6 class="acc-numeration">02</h6>
         </div>
         <div class="content-body">
           <div class="acc-btn">
@@ -118,7 +129,7 @@
       <div class="content">
         <div class="content-header">
           <div class="horizontal-line"></div>
-          <h6 class="numeration">03</h6>
+          <h6 class="acc-numeration">03</h6>
         </div>
         <div class="content-body">
           <div class="acc-btn">
@@ -230,10 +241,179 @@
         <img class="img-parallax" src="img/blocks/4.png" data-speed="1">
       </div>
     </div>
-    <div class="value">
-      <div class="text">Hello 5</div>
+  </section>
+
+  <section class="testimonials h-unspecified">
+    <div class="slick-carousel">
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="info">
+          <img class="brand" src="img/testimonials/brands/1.png" alt="Kitab Sawti">
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra consectetur enim.
+          </p>
+          <div class="person">
+            <h6 class="name">John Doe</h6>
+            <h6 class="position">Chief analyst officer @ Kitab Sawti</h6>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="img/testimonials/covers/1.png" alt="Kitab Sawti cover">
+        </div>
+      </div>
     </div>
   </section>
+
+  <section class="contribute h-unspecified">
+    <h3>Time to <span>contribute</span>.</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis erat, tincidunt non fringilla sit amet, consectetur ac purus. Donec in vulputate quam.
+    </p>
+    <div class="newsletter large">
+      <input type="email" placeholder="Your email address">
+      <button>Join the community</button>
+    </div>
+  </section>
+
+  <section class="info h-unspecified">
+    <div class="contact">
+      <h6 class="of-contact">Stay in touch, sign up to our newsletter</h6>
+      <div class="newsletter small">
+        <input type="email" placeholder="Your email address">
+        <svg xmlns="http://www.w3.org/2000/svg" width="7.419" height="12.01" viewBox="0 0 7.419 12.01">
+          <path id="Path_14" data-name="Path 14" d="M2452.522,7432.686l5,5.006-5,5" transform="translate(-2451.522 -7431.685)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+    <div class="links">
+      <table>
+        <thead>
+        <tr>
+          <td>Product</td>
+          <td>Company</td>
+          <td>Infos</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><a href="javascript:;">How it works</a></td>
+          <td><a href="javascript:;">About us</a></td>
+          <td><a href="javascript:;">About us</a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:;">About </a></td>
+          <td><a href="javascript:;">Contact us</a></td>
+          <td><a href="javascript:;">Contact us</a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:;">Blog</a></td>
+          <td><a href="javascript:;">Careers</a></td>
+          <td><a href="javascript:;">Careers</a></td>
+        </tr>
+        <tr>
+          <td><a href="javascript:;">Github</a></td>
+          <td><a href="javascript:;">Press</a></td>
+          <td><a href="javascript:;">Press</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logo-white.png" alt="coinsence">
+      </div>
+      <div class="socials">
+        <a href="javascript:;" class="github"></a>
+        <a href="javascript:;" class="facebook"></a>
+        <a href="javascript:;" class="twitter"></a>
+        <a href="javascript:;" class="linkedin"></a>
+        <a href="javascript:;" class="instagram"></a>
+      </div>
+    </div>
+    <div class="links">
+      <a class="of-footer" href="javascript:;">Privacy Policy</a>
+      <a class="of-footer" href="javascript:;">Terms of use</a>
+      <span>© 2019 Coinsence Software Inc. All rights reserved.</span>
+    </div>
+
+  </footer>
 
 
 
@@ -254,6 +434,8 @@
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <!--<script src="js/vendor/owl.carousel.min.js"></script>-->
+  <script src="js/vendor/slick.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

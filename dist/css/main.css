@@ -117,23 +117,71 @@ nav {
   width: 100%;
   height: 10vh;
   position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position .5s, box-shadow .5s;
+}
+
+nav.active {
+  background-position: top;
+  box-shadow: #acacac 0 0 20px -8px;
 }
 
 nav a {
   text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 23px 24px;
+}
+
+nav > * {
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav .brand {
-  margin-left: 27px;
-  margin-right: 124px;
+  flex: 1;
 }
 
-nav a.right {
+nav .brand img {
+  padding-left: 1.40625vw;
+}
+
+/*nav .brand {*/
+/*margin-left: 27px;*/
+/*margin-right: 124px;*/
+/*}*/
+
+nav .left {
+  flex: 1.5;
+}
+
+nav .left li {
+  display: inline-block;
+  margin: 0 1.46vw;
+}
+
+nav .right {
+  flex: 1;
+  height: 100%;
+}
+
+nav .right li {
   float: right;
-  padding: 37px 59px;
+  height: 100%;
+}
+
+nav .right li a {
+  padding: 0 5.55vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 
@@ -155,13 +203,7 @@ section.landing h1 {
 }
 
 section.landing .newsletter {
-  margin-top: 90px;
-}
-
-section.landing .scroll h6 {
-  color: #1e1e1e;
-  font-size: 11px;
-  text-transform: uppercase;
+  margin-top: 8.333333333333333vh;
 }
 
 section.landing .scroll {
@@ -192,7 +234,7 @@ section.landing .links a {
 
 
 section.values-1 {
-  height: 110vh;
+  /*height: 110vh;*/
   background-color: #fff;
 }
 
@@ -200,11 +242,6 @@ section.values-1 .partners {
   /*height: 14vh;*/
   padding: 6vh 0 8vh;
   text-align: center;
-}
-
-section.values-1 .partners h6 {
-  font-size: 16px;
-  color: #bcbcbc;
 }
 
 section.values-1 .partners img {
@@ -257,12 +294,6 @@ section.values-1 .accordion .content .content-header > * {
 
 section.values-1 .accordion .content .content-header .horizontal-line {
   background-color: #fff;
-}
-
-section.values-1 .accordion .content .content-header h6 {
-  font-size: 13px;
-  font-weight: bold;
-  color: #fff;
 }
 
 section.values-1 .accordion .content .content-body .acc-btn {
@@ -319,8 +350,6 @@ section.values-1 .accordion .content:hover .content-footer a {
   transform: translateY(0);
   opacity: 1;
 }
-
-
 
 
 
@@ -399,33 +428,172 @@ section.values .value .img-parallax {
 
 
 
-@media only screen and (max-width: 768px) {
+section.testimonials {
+  /*height: 82vh;*/
+  background-color: #f8f8f8;
+}
+
+section.testimonials .testimonial {
+  display: flex;
+  padding: 12vh 0;
+  outline: none;
+}
+
+section.testimonials .testimonial > * {
+  flex: 1;
+}
+
+section.testimonials .testimonial .info {
+  padding-left: 16vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+section.testimonials .testimonial .info .brand {
+  width: auto;
+  align-self: flex-start;
+  margin-bottom: auto;
+}
+
+section.testimonials .testimonial .info .quote {
+  position: relative;
+  margin-bottom: 6vh;
+}
+
+section.testimonials .testimonial .info .quote::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/quotes.png);
+  top: -3.7vh;
+  left: -3.125vw;
+  height: 120px;
+  width: 120px;
+  background-repeat: no-repeat;
+}
+
+section.testimonials .testimonial .info .person {
+  margin-bottom: auto;
+}
+
+section.testimonials .testimonial .info .person h6.name {
+  margin-bottom: 0.2vh;
+  color: #28aa69;
+}
+
+section.testimonials .testimonial .cover img {
+  width: 45vw;
+  padding-right: 5vw;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.testimonials .slick-carousel .slick-prev,
+section.testimonials .slick-carousel .slick-next,
+section.testimonials .slick-carousel .slick-dots,
+section.testimonials .slick-carousel .slick-dots li {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 
-  nav a.primary,
-  nav a.secondary {
+section.contribute {
+  padding: 15vh 17.1875vw;
+  background-color: #fff;
+}
+
+section.contribute .newsletter {
+  margin-top: 8.333333333333333vh;
+}
+
+section.contribute p {
+  margin-top: 3.333333333333333vh;
+}
+
+
+section.info {
+  padding: 9.82vh 4.27vw;
+  background-color: #1e1e1e;
+  display: flex;
+}
+
+section.info .contact {
+  flex: 1.5;
+}
+
+section.info .contact .newsletter {
+  margin-top: 1.85vh;
+}
+
+section.info .links {
+  flex: 1.5;
+}
+
+section.info .links table {
+  width: 100%;
+}
+
+section.info .links td {
+  color: #fff;
+  padding: 8px;
+}
+
+section.info .links td a {
+  color: #acacac;
+}
+
+footer {
+  padding: 4.62962962962963vh 4.479166666666667vw;
+  background-color: #1e1e1e;
+  border-top: #343434 solid 1px;
+  display: flex;
+}
+
+footer > * {
+  flex: 1;
+}
+
+footer .brand {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .socials {
+  margin: 0 auto;
+}
+
+footer .links {
+  text-align: right;
+}
+
+footer .links a:first-of-type {
+  margin-top: 3.518518518518519vh;
+}
+
+footer .links a:last-of-type {
+  margin-top: 0.7407407407407407vh;
+  margin-bottom: 2.777777777777778vh;
+}
+
+footer .links a {
+  color: #fff;
+  margin-right: 4.479166666666667vw;
+}
+
+footer .links span {
+  color: #acacac;
+  opacity: 0.5;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  nav .right li a.primary,
+  nav .right li a.secondary {
     display: none;
-  }
-
-
-
-  section.landing {
-    padding: 10vh 0 0;
-    text-align: center;
-  }
-
-  section.landing h1 {
-    padding-top: 22vh;
-  }
-
-  section.landing .newsletter {
-    width: 90%;
-  }
-
-  section.landing .newsletter input {
-    width: 90%;
-    padding: 0 5%;
   }
 
   section.landing .scroll {
@@ -436,6 +604,34 @@ section.values .value .img-parallax {
     display: block;
   }
 
+  footer {
+    flex-direction: column;
+  }
+
+  footer .socials {
+    margin: 0;
+  }
+
+  footer .links {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+  section.landing {
+    padding: 10vh 0 0;
+    text-align: center;
+  }
+
+  section.landing h1 {
+    padding-top: 22vh;
+  }
 
 
   section.values-1 .accordion {
@@ -496,6 +692,21 @@ section.values .value .img-parallax {
     width: 100%;
   }
 
+  section.contribute {
+    padding: 14.5vh 3.4375vw;
+    text-align: center;
+  }
+
+
+
+  section.info {
+    flex-direction: column;
+  }
+
+  section.info .links {
+    margin-top: 5.185185185185185vh;
+  }
+
 }
 
 
@@ -504,6 +715,10 @@ section.values .value .img-parallax {
 
   section.values-1 .accordion .content {
     padding: 4vh 1.85vw;
+  }
+
+  section.info .links td {
+    padding: 10px;
   }
 
 }
