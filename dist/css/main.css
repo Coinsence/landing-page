@@ -111,6 +111,8 @@ body {
   position: relative;
 }
 
+
+
 nav {
   width: 100%;
   height: 10vh;
@@ -135,9 +137,12 @@ nav a.right {
 }
 
 
+
 section {
   height: 100vh;
 }
+
+
 
 section.landing {
   position: relative;
@@ -186,11 +191,142 @@ section.landing .links a {
 
 
 
+section.values-1 {
+  height: 110vh;
+  background-color: #fff;
+}
+
+section.values-1 .partners {
+  /*height: 14vh;*/
+  padding: 6vh 0 8vh;
+  text-align: center;
+}
+
+section.values-1 .partners h6 {
+  font-size: 16px;
+  color: #bcbcbc;
+}
+
+section.values-1 .partners img {
+  margin: 2vh;
+}
+
+section.values-1 .accordion {
+  height: 82vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+section.values-1 .accordion .content {
+  flex: 1;
+  padding: 9.25vh 2.8125vw 0;
+
+  transition: background-color .25s;
+}
+
+section.values-1 .accordion .content:hover {
+  background-color: rgba(0, 0, 0, 0.71);
+}
+
+section.values-1 .accordion .content .content-header {
+  height: 10%;
+}
+
+section.values-1 .accordion .content .content-body {
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3.1875vw;
+
+  position: relative;
+}
+
+section.values-1 .accordion .content .content-footer {
+  height: 20%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+section.values-1 .accordion .content .content-header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section.values-1 .accordion .content .content-header .horizontal-line {
+  background-color: #fff;
+}
+
+section.values-1 .accordion .content .content-header h6 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+
+section.values-1 .accordion .content .content-body .acc-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0,0,0,.75);
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+section.values-1 .accordion .content .content-body h5 {
+  text-transform: uppercase;
+}
+
+section.values-1 .accordion .content .content-body h4 {
+  color: #fff;
+}
+
+section.values-1 .accordion .content .content-body p {
+  padding-top: 4vh;
+  color: #fff;
+  transform: translateY(-100px);
+  opacity: 0;
+
+  transition: transform .25s, opacity .25s;
+}
+
+section.values-1 .accordion .content:hover .content-body p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+section.values-1 .accordion .content .content-footer a {
+  width: 16vw;
+  height: 12vh;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 16vw / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(200px);
+  opacity: 0;
+
+  transition: transform .25s, opacity .25s;
+}
+
+section.values-1 .accordion .content:hover .content-footer a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
 
 section.values {
   background-color: #fff;
 }
-
 
 section.values .value {
   height: 87vh;
@@ -210,7 +346,6 @@ section.values .value:nth-child(odd) .text {
 section.values .value:nth-child(even) .text {
   float: right;
 }
-
 
 section.values .value .text {
 
@@ -249,10 +384,6 @@ section.values .value .text h6 {
   margin-left: 14px;
 }
 
-
-
-
-
 section.values .value .img-container {
   position: relative;
   overflow: hidden;
@@ -266,175 +397,17 @@ section.values .value .img-parallax {
   pointer-events: none;
 }
 
-/*section.values .value:nth-child(1) .img-parallax {*/
-/*background-image: url("../img/blocks/1.png");*/
-/*}*/
-
-/*section.values .value:nth-child(2) .img-parallax {*/
-/*background-image: url("../img/blocks/2.png");*/
-/*}*/
-
-/*section.values .value:nth-child(3) .img-parallax {*/
-/*background-image: url("../img/blocks/3.png");*/
-/*}*/
-
-/*section.values .value:nth-child(4) .img-parallax {*/
-/*background-image: url("../img/blocks/4.png");*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*section.values .backgrounds {*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  /*z-index: -1;*/
-  /*transform: translateZ(-1px);*/
-/*}*/
-
-
-/*section.values .backgrounds .bg {*/
-  /*height: 87vh;*/
-/*}*/
-
-/*section.values .backgrounds .bg:nth-child(1) {*/
-  /*background-image: url("../img/blocks/1.png");*/
-/*}*/
-
-/*section.values .backgrounds .bg:nth-child(2) {*/
-  /*background-image: url("../img/blocks/2.png");*/
-/*}*/
-
-/*section.values .backgrounds .bg:nth-child(3) {*/
-  /*background-image: url("../img/blocks/3.png");*/
-/*}*/
-
-/*section.values .backgrounds .bg:nth-child(4) {*/
-  /*background-image: url("../img/blocks/4.png");*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*section.values .value {*/
-  /*height: 87vh;*/
-/*}*/
-
-/*section.values .value:after {*/
-  /*content: " ";*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*background-size: 100%;*/
-  /*z-index: -1;*/
-  /*transform: translateZ(-1px) scale(2);*/
-  /*background-image: url("../img/blocks/1.png");*/
-/*}*/
-
-/*section.values .value::after {*/
-  /**/
-/*}*/
-
-/*section.values .value::after {*/
-  /*content: " ";*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-
-  /*transform: translateZ(-1px) scale(1.5);*/
-  /*!* Force the background image to fill the whole element. *!*/
-  /*background-size: 100%;*/
-  /*!* Keep the image from overlapping sibling elements. *!*/
-  /*z-index: -1;*/
-/*}*/
-
-
-/*section.values .value:nth-child(odd) {*/
-  /**/
-/*}*/
-
-/*section.values .value:nth-child(even) {*/
-  /**/
-/*}*/
-
-/*section.values .value:nth-child(1)::after, section.values .value:nth-child(1) .image {*/
-  /*background-image: url("../img/blocks/1.png");*/
-/*}*/
-
-/*section.values .value:nth-child(2)::after, section.values .value:nth-child(2) .image {*/
-  /*background-image: url("../img/blocks/2.png");*/
-/*}*/
-
-/*section.values .value:nth-child(3)::after, section.values .value:nth-child(3) .image {*/
-  /*background-image: url("../img/blocks/3.png");*/
-/*}*/
-
-/*section.values .value:nth-child(4)::after, section.values .value:nth-child(4) .image {*/
-  /*background-image: url("../img/blocks/4.png");*/
-/*}*/
-
-/*section.values .value .text {*/
-  /*background-color: #555555;*/
-  /*height: 100%;*/
-/*}*/
-
-/*section.values .value .image {*/
-  /*display: none;*/
-/*}*/
-
-/*section.values .value:nth-child(odd) .text {*/
-  /*margin-right: 50%;*/
-/*}*/
-
-/*section.values .value:nth-child(even) .text {*/
-  /*margin-left: 50%;*/
-/*}*/
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 768px) {
+
 
 
   nav a.primary,
   nav a.secondary {
     display: none;
   }
+
 
 
   section.landing {
@@ -455,14 +428,63 @@ section.values .value .img-parallax {
     padding: 0 5%;
   }
 
-  .scroll {
+  section.landing .scroll {
     display: none;
   }
-
 
   section.landing .links {
     display: block;
   }
+
+
+
+  section.values-1 .accordion {
+    height: auto;
+    flex-direction: column;
+  }
+
+  section.values-1 .accordion .content {
+    padding: 4vh 8vw;
+    transition: none;
+  }
+
+  section.values-1 .accordion .content:hover {
+    background: none;
+  }
+
+  section.values-1 .accordion .content .content-header,
+  section.values-1 .accordion .content .content-footer {
+    display: none;
+  }
+
+  section.values-1 .accordion .content .content-body .acc-btn {
+    display: block;
+  }
+
+  section.values-1 .accordion .content .content-body {
+    height: 100%;
+    padding-right: 18vw;
+  }
+
+  section.values-1 .accordion .content .content-body p {
+    opacity: 1;
+    transform: none;
+
+    overflow: hidden;
+    max-height: 0;
+    height: auto;
+
+    padding-top: 0;
+
+    transition: max-height .5s, padding-top .5s;
+  }
+
+  section.values-1 .accordion .content:hover .content-body p {
+    padding-top: 4vh;
+    max-height: 20vh;
+  }
+
+
 
   section.values .value > * {
     width: 100%;
@@ -474,52 +496,17 @@ section.values .value .img-parallax {
     width: 100%;
   }
 
-  /*section.values .value {*/
-    /*float: none !important;*/
-  /*}*/
-
-  /*section.values .value .text {*/
-    /*height: 50%;*/
-  /*}*/
-
-  /*section.values .value .img-parallax {*/
-    /*position: static;*/
-  /*}*/
-
-  /*section.values .value .text {*/
-    /*margin: 0 !important;*/
-    /*height: 50%;*/
-  /*}*/
-
-  /*section.values .value .image {*/
-    /*display: block;*/
-    /*height: 50%;*/
-    /*width: 100%;*/
-    /*background-size: cover;*/
-    /*background-position: 50% 38%;*/
-  /*}*/
-
-
-
-  /*section.values .value > div {*/
-    /*width: 100%;*/
-    /*height: 50%;*/
-    /*float: none;*/
-  /*}*/
-
 }
+
 
 
 @media only screen and (max-width: 375px) {
 
-
+  section.values-1 .accordion .content {
+    padding: 4vh 1.85vw;
+  }
 
 }
-
-
-
-
-
 
 
 

@@ -53,6 +53,12 @@ button {
   background-color: #707070;
 }
 
+.horizontal-line {
+  height: 1px;
+  width: 2.34375vw;
+  margin-right: 0.8333333333333333vw;
+}
+
 .h-unspecified {
   height: auto;
 }
