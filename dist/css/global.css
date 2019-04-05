@@ -1,3 +1,9 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 input {
   outline: none;
   border: none;
@@ -48,6 +54,7 @@ button {
 .newsletter.large input {
   width: 44.89583333333333vw;
   font-size: 18px;
+  background-color: #f8f8f8;
 }
 
 .newsletter.large button {
@@ -193,22 +200,113 @@ button {
   display: block;
 }
 
+.hamburger {
+  cursor: pointer;
+}
+
+
+.hamburger .hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 26px;
+}
+
+.hamburger .hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+}
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner:after,
+.hamburger .hamburger-inner:before {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: none;
+  border-radius: 4px;
+  background-color: #1d1d1d;
+  left: calc(50% - 12px);
+}
+
+.hamburger .hamburger-inner:after,
+.hamburger .hamburger-inner:before {
+  display: block;
+  content: "";
+}
+
+.hamburger .hamburger-inner:before {
+  top: -8px;
+}
+
+.hamburger .hamburger-inner:after {
+  bottom: -8px;
+}
+
+.hamburger.active .hamburger-box {
+  background-color: #1d1d1d;
+}
+
+.hamburger.active .hamburger-inner,
+.hamburger.active .hamburger-inner:after,
+.hamburger.active .hamburger-inner:before {
+  background-color: #fff;
+}
+
+.hamburger.active .hamburger-inner {
+  transform: rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner:before {
+  top: 0;
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-inner:after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.hamburger-popup {
+  height: 71vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #28AA69;
+  padding: 15vh 0 14vh;
+}
+
 @media only screen and (max-width: 768px) {
 
-  .newsletter input {
-    width: 28.64583333333333vw;
-    height: 3.5vh;
+  .newsletter:not(.small) {
+    width: 100%;
+  }
+
+  .newsletter:not(.small) input{
+    width: 85%;
+    min-width: auto;
+    height: 3.885vh;
     font-size: 12px;
+    padding: 0 5%;
+    margin-left: 2.5%;
   }
 
   .newsletter.large input {
-    width: 32.29166666666667vw;
+    /*width: 32.29166666666667vw;*/
     height: 5.5vh;
     font-size: 16px;
   }
 
-  .newsletter button {
+  .newsletter:not(.small) button {
     font-size: 10px;
+    padding: 0 5%;
+    margin-left: 2.5%;
   }
 
   .newsletter.large button {
@@ -223,6 +321,47 @@ button {
 
   .newsletter.small svg {
     padding: 2.1vh 24px;
+  }
+
+  .slick-dots {
+    padding: 10px 34px;
+    border-radius: 8px;
+  }
+
+  .slick-dots li {
+    width: 16px;
+    height: 16px;
+  }
+
+  .slick-dots li button {
+    width: 16px;
+    height: 16px;
+    padding: 3px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    padding: 12px 18px;
+  }
+
+  .slick-prev {
+    left: -22px;
+  }
+
+  .slick-next {
+    right: -22px;
+  }
+
+  .hamburger-popup {
+    height: 86vh;
+    padding: 10vh 0 6vh;
   }
 
 }
@@ -257,5 +396,3 @@ a.linkedin {
 a.instagram {
   background-image: url("../img/footer/link-instagram.png");
 }
-
-

@@ -126,9 +126,14 @@ nav {
   transition: background-position .5s, box-shadow .5s;
 }
 
-nav.active {
+nav.active:not(.hamburger-active) {
   background-position: top;
   box-shadow: #acacac 0 0 20px -8px;
+}
+
+nav.hamburger-active .brand,
+nav.hamburger-active .left {
+  opacity: 0;
 }
 
 nav a {
@@ -139,12 +144,6 @@ nav > * {
 
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 nav .brand {
   flex: 1;
 }
@@ -152,11 +151,6 @@ nav .brand {
 nav .brand img {
   padding-left: 1.40625vw;
 }
-
-/*nav .brand {*/
-/*margin-left: 27px;*/
-/*margin-right: 124px;*/
-/*}*/
 
 nav .left {
   flex: 1.5;
@@ -182,6 +176,10 @@ nav .right li a {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+nav .hamburger {
+  display: none;
 }
 
 
@@ -307,6 +305,36 @@ section.values-1 .accordion .content .content-body .acc-btn {
   line-height: 36px;
   text-align: center;
   cursor: pointer;
+}
+
+section.values-1 .accordion .content .content-body .acc-btn .acc-btn-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section.values-1 .accordion .content .content-body .acc-btn .acc-btn-box .acc-btn-inner,
+section.values-1 .accordion .content .content-body .acc-btn .acc-btn-box .acc-btn-inner:after {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 6px;
+  left: calc(50% - 7px);
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: none;
+}
+
+section.values-1 .accordion .content .content-body .acc-btn .acc-btn-box .acc-btn-inner {
+  top: 18px;
+}
+
+section.values-1 .accordion .content .content-body .acc-btn .acc-btn-box .acc-btn-inner::after {
+  display: block;
+  content: "";
+  top: 0;
+  transform: rotate(90deg);
 }
 
 section.values-1 .accordion .content .content-body h5 {
@@ -489,6 +517,10 @@ section.testimonials .testimonial .cover img {
   transform: translateY(-50%);
 }
 
+section.testimonials .slick-carousel.hidden {
+  display: none;
+}
+
 section.testimonials .slick-carousel .slick-prev,
 section.testimonials .slick-carousel .slick-next,
 section.testimonials .slick-carousel .slick-dots,
@@ -591,9 +623,21 @@ footer .links span {
 
 @media only screen and (max-width: 1024px) {
 
-  nav .right li a.primary,
-  nav .right li a.secondary {
+  nav .brand img {
+    padding-left: 4.8828125vw
+  }
+
+  nav .right {
     display: none;
+  }
+
+  nav .left {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: block;
+    padding-right: 6vw;
   }
 
   section.landing .scroll {
@@ -618,11 +662,53 @@ footer .links span {
     flex-direction: column;
   }
 
+  .hamburger-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hamburger-popup > * {
+    padding: 0 7.8125vw;
+  }
+
+  .hamburger-popup .links li:not(:last-of-type) {
+    margin-bottom: 1.75vh;
+  }
+
+  .hamburger-popup .links a {
+    font-size: 40px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+  }
+
+  .hamburger-popup .info {
+    margin-top: 5.55vh;
+    margin-bottom: auto;
+  }
+
+  .hamburger-popup .info li {
+    display: inline-block;
+    margin-right: 3.125vw;
+  }
+
+  .hamburger-popup .info a {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .hamburger-popup .socials a {
+    margin: 0 2vw;
+  }
+
 }
 
 
 @media only screen and (max-width: 768px) {
 
+  nav .brand img {
+    padding-left: 6.510416666666667vw
+  }
 
   section.landing {
     padding: 10vh 0 0;
@@ -639,14 +725,39 @@ footer .links span {
     flex-direction: column;
   }
 
-  section.values-1 .accordion .content {
-    padding: 4vh 8vw;
-    transition: none;
+  section.values-1 .accordion .content:nth-child(1) {
+    background: url("../img/blocks-1/accordion/1-t.jpg") 50%;
   }
 
-  section.values-1 .accordion .content:hover {
-    background: none;
+  section.values-1 .accordion .content:nth-child(2) {
+    background: url("../img/blocks-1/accordion/2-t.jpg") 50% 33%;
   }
+
+  section.values-1 .accordion .content:nth-child(3) {
+    background: url("../img/blocks-1/accordion/3-t.jpg") 50% 25%;
+  }
+
+  section.values-1 .accordion .content {
+    padding: 5.74vh 8vw;
+    transition: none;
+    position: relative;
+
+  }
+
+  section.values-1 .accordion .content::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.55);
+    top: 0;
+    left: 0;
+  }
+
+  /*section.values-1 .accordion .content:hover {*/
+    /*!*background: none;*!*/
+  /*}*/
 
   section.values-1 .accordion .content .content-header,
   section.values-1 .accordion .content .content-footer {
@@ -675,11 +786,14 @@ footer .links span {
     transition: max-height .5s, padding-top .5s;
   }
 
-  section.values-1 .accordion .content:hover .content-body p {
+  section.values-1 .accordion .content.active .content-body p {
     padding-top: 4vh;
     max-height: 20vh;
   }
 
+  section.values-1 .accordion .content.active .content-body .acc-btn .acc-btn-box .acc-btn-inner::after {
+    display: none;
+  }
 
 
   section.values .value > * {
@@ -690,6 +804,10 @@ footer .links span {
   section.values .value .img-parallax {
     transform: translate(0,-20%);
     width: 100%;
+  }
+
+  section.testimonials .testimonial .info {
+    padding: 0 4.51vw;
   }
 
   section.contribute {
@@ -705,6 +823,28 @@ footer .links span {
 
   section.info .links {
     margin-top: 5.185185185185185vh;
+  }
+
+  .hamburger-popup > * {
+    padding: 0 4.43vw;
+  }
+
+  .hamburger-popup .links a {
+    font-size: 29px;
+  }
+
+  .hamburger-popup .links li:not(:last-of-type) {
+    margin-bottom: 0.83vh;
+  }
+
+  .hamburger-popup .info {
+    margin-top: 2.78vh;
+  }
+
+  .hamburger-popup .info li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0.74vh;
   }
 
 }
