@@ -247,15 +247,42 @@ section.values-1 .partners img {
 }
 
 section.values-1 .accordion {
+  position: relative;
   height: 82vh;
   display: flex;
+  transition: background 0.5s;
+}
+
+section.values-1 .accordion.first {
+  background: url("../img/blocks-1/accordion/1.jpg") 50%;
+  background-size: 114vw;
+}
+
+section.values-1 .accordion.second {
+  background: url("../img/blocks-1/accordion/2.jpg") 50%;
+  background-size: 114vw;
+}
+
+section.values-1 .accordion.third {
+  background: url("../img/blocks-1/accordion/3.jpg") 50%;
+  background-size: 114vw;
+}
+
+section.values-1 .accordion:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.47);
+  height: 100%;
+  width: 100%;
 }
 
 section.values-1 .accordion .content {
   flex: 1;
   padding: 9.25vh 2.8125vw 0;
-
+  z-index: 10;
   transition: background-color .25s;
 }
 
@@ -648,6 +675,14 @@ footer .links span {
     display: block;
   }
 
+  section.info {
+    flex-direction: column;
+  }
+
+  section.info .links {
+    margin-top: 5.185185185185185vh;
+  }
+
   footer {
     flex-direction: column;
   }
@@ -813,16 +848,6 @@ footer .links span {
   section.contribute {
     padding: 14.5vh 3.4375vw;
     text-align: center;
-  }
-
-
-
-  section.info {
-    flex-direction: column;
-  }
-
-  section.info .links {
-    margin-top: 5.185185185185185vh;
   }
 
   .hamburger-popup > * {

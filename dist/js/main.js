@@ -130,6 +130,38 @@
       else
         $section.addClass('active');
 
+    }).on('mouseover', '.content', function () {
+
+      var $section = $(this);
+      var $accordion = $section.closest('.accordion');
+
+      if (window.innerWidth <= 768)
+        return;
+
+
+      switch ($section.index()) {
+        case 0:
+          if (!$accordion.hasClass('first')) {
+            $accordion.removeClass('second').removeClass('third');
+            $accordion.addClass('first');
+          }
+          break;
+        case 1:
+          if (!$accordion.hasClass('second')) {
+            $accordion.removeClass('first').removeClass('third');
+            $accordion.addClass('second');
+          }
+          break;
+        case 2:
+          if (!$accordion.hasClass('third')) {
+            $accordion.removeClass('first').removeClass('second');
+            $accordion.addClass('third');
+          }
+          break;
+        default:
+          break;
+      }
+
     });
 
     $(window).scroll(function() {
