@@ -11,23 +11,33 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 h1 {
+  font-family: 'Carnas', sans-serif;
+  font-weight: bold;
   font-size: 85px;
   line-height: 0.75;
 }
 
 h2 {
+  font-family: 'Carnas', sans-serif;
+  font-weight: bold;
   font-size: 85px;
 }
 
 h3 {
+  font-family: 'Carnas', sans-serif;
+  font-weight: bold;
   font-size: 65px;
 }
 
 h4 {
+  font-family: 'Carnas', sans-serif;
+  font-weight: bold;
   font-size: 25px;
 }
 
 h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: #28aa69;
   font-size: 12px;
 }
@@ -38,23 +48,47 @@ h6 {
 }
 
 h6.of-scroll {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   color: #1e1e1e;
   font-size: 11px;
   text-transform: uppercase;
 }
 
 h6.of-partners {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   font-size: 16px;
   color: #bcbcbc;
 }
 
 h6.acc-numeration {
-  font-size: 13px;
+  font-family: 'Carnas', sans-serif;
   font-weight: bold;
+  font-size: 13px;
   color: #fff;
 }
 
+h6.of-obj {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+h6.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h6.position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
 h6.of-contact {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
@@ -70,6 +104,11 @@ h2 span {
 
 h3 span {
   color: #28aa69;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
 
 
@@ -92,10 +131,14 @@ h4 + p {
 }
 
 p.quote {
+  font-family: 'Carnas', sans-serif;
+  font-weight: normal;
   font-size: 30px;
 }
 
 a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 14px;
   color: #1e1e1e;
   text-decoration: none;
@@ -112,14 +155,20 @@ a.secondary {
 }
 
 table thead td {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 13px;
 }
 
 table tbody td a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   font-size: 14px;
 }
 
 a.of-footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   font-size: 14px;
 }
 

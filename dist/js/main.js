@@ -4,9 +4,11 @@
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
       $('nav').addClass('active');
+      $('.scroll').addClass('hidden-o');
     }
     else {
       $('nav').removeClass('active');
+      $('.scroll').removeClass('hidden-o');
     }
   }
 

@@ -1,3 +1,6 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 /* Slick carousel font */
 @font-face
 {
@@ -7,4 +10,26 @@
 
   src: url('./vendor/fonts/slick.eot');
   src: url('./vendor/fonts/slick.eot?#iefix') format('embedded-opentype'), url('./vendor/fonts/slick.woff') format('woff'), url('./vendor/fonts/slick.ttf') format('truetype'), url('./vendor/fonts/slick.svg#slick') format('svg');
+}
+
+/* Carnas Bold font */
+@font-face
+{
+  font-family: 'Carnas';
+  font-weight: bold;
+  font-style: normal;
+
+  src: url('fonts/Carnas Bold.otf');
+  src: url('fonts/Carnas Bold.woff') format('woff');
+}
+
+/* Carnas Regular font */
+@font-face
+{
+  font-family: 'Carnas';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('fonts/Carnas Regular.otf');
+  src: url('fonts/Carnas Regular.woff') format('woff');
 }

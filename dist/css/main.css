@@ -210,6 +210,7 @@ section.landing .scroll {
   left: 0;
   right: 0;
   text-align: center;
+  transition: opacity 0.5s;
 }
 
 section.landing .links {
@@ -712,6 +713,8 @@ footer .links span {
   }
 
   .hamburger-popup .links a {
+    font-family: 'Carnas', sans-serif;
+    font-weight: normal;
     font-size: 40px;
     color: #1e1e1e;
     text-transform: uppercase;
@@ -728,6 +731,8 @@ footer .links span {
   }
 
   .hamburger-popup .info a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     color: #fff;
   }
@@ -831,6 +836,11 @@ footer .links span {
   }
 
 
+
+  section.values .value.large {
+    height: 100vh;
+  }
+
   section.values .value > * {
     width: 100%;
     height: 50%;
@@ -898,8 +908,12 @@ footer .links span {
  * Hide visually and from screen readers
  */
 
- .hidden {
+.hidden {
   display: none !important;
+}
+
+.hidden-o {
+  opacity: 0;
 }
 
 /*
