@@ -172,6 +172,16 @@ a.of-footer {
   font-size: 14px;
 }
 
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width: 768px) {
 

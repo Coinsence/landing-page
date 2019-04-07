@@ -34,11 +34,10 @@
 
   }
 
-  function toggleAccordionSection(index) {
-
-  }
-
   $(document).ready(function () {
+
+    // Initialize landing bg
+    // $('section.landing').removeClass('hidden-bg');
 
     // Initialize parallax
     $('.img-parallax').each(function(){

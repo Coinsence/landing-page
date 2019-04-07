@@ -192,16 +192,43 @@ section {
 
 section.landing {
   position: relative;
-  height: 90vh;
-  padding: 10vh 168px 0;
+  height: 80vh;
+  padding: 10vh 168px 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.landing.hidden-bg::before {
+  background-position: 50% -500%;
+  opacity: 0;
+}
+
+section.landing::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/plant.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: 50%;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  transition: opacity 1s .25s, background 1s;
+  opacity: 1;
 }
 
 section.landing h1 {
-  padding-top: 28vh;
+  /*padding-top: 8vh;*/
 }
 
 section.landing .newsletter {
   margin-top: 8.333333333333333vh;
+  width: calc(31.78vw + 28px * 2 + 2px);
+  min-width: calc(440px + 28px * 2 + 2px);
 }
 
 section.landing .scroll {
@@ -417,6 +444,10 @@ section.values .value {
   height: 87vh;
   overflow: hidden;
   position: relative;
+}
+
+section.values .value.large {
+  height: 100vh;
 }
 
 section.values .value > * {
@@ -751,12 +782,19 @@ footer .links span {
   }
 
   section.landing {
-    padding: 10vh 0 0;
+    padding: 10vh 0;
     text-align: center;
   }
 
   section.landing h1 {
-    padding-top: 22vh;
+    padding-top: 4vh;
+  }
+
+  section.landing .newsletter {
+    margin-top: 4.62vh;
+    margin-bottom: auto;
+    width: auto;
+    min-width: auto;
   }
 
 
@@ -838,7 +876,7 @@ footer .links span {
 
 
   section.values .value.large {
-    height: 100vh;
+    height: 124vh;
   }
 
   section.values .value > * {
