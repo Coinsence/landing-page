@@ -279,21 +279,22 @@ section.values-1 .accordion {
   height: 82vh;
   display: flex;
   transition: background 0.5s;
+  background-repeat: no-repeat
 }
 
 section.values-1 .accordion.first {
   background: url("../img/blocks-1/accordion/1.jpg") 50%;
-  background-size: 114vw;
+  background-size: 160vw;
 }
 
 section.values-1 .accordion.second {
   background: url("../img/blocks-1/accordion/2.jpg") 50%;
-  background-size: 114vw;
+  background-size: 160vw;
 }
 
 section.values-1 .accordion.third {
   background: url("../img/blocks-1/accordion/3.jpg") 50%;
-  background-size: 114vw;
+  background-size: 160vw;
 }
 
 section.values-1 .accordion:before {
