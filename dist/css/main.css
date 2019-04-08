@@ -525,6 +525,7 @@ section.testimonials .testimonial {
   display: flex;
   padding: 12vh 0;
   outline: none;
+  overflow: hidden;
 }
 
 section.testimonials .testimonial > * {
@@ -594,6 +595,7 @@ section.testimonials .slick-carousel .slick-dots li {
 section.contribute {
   padding: 15vh 17.1875vw;
   background-color: #fff;
+  text-align: center;
 }
 
 section.contribute .newsletter {
@@ -763,7 +765,7 @@ footer .links span {
   }
 
   .hamburger-popup .info a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Carnas', sans-serif;
     font-weight: normal;
     font-size: 15px;
     color: #fff;
@@ -783,7 +785,7 @@ footer .links span {
   }
 
   section.landing {
-    padding: 10vh 0;
+    padding: 10vh 12vw;
     text-align: center;
   }
 

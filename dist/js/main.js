@@ -1,6 +1,6 @@
 (function($){
 
-  function verifyNavScroll() {
+  function verifyScroll() {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
       $('nav').addClass('active');
@@ -33,6 +33,8 @@
     }
 
   }
+
+  verifyScroll();
 
   $(document).ready(function () {
 
@@ -117,7 +119,7 @@
       // items: 1,
     });
 
-    verifyNavScroll();
+    verifyScroll();
 
     $('.hamburger').on('click', function () {
       toggleHamburgerPopup();
@@ -166,7 +168,7 @@
     });
 
     $(window).scroll(function() {
-      verifyNavScroll();
+      verifyScroll();
     });
 
     $(window).resize(function() {

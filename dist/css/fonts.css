@@ -1,5 +1,8 @@
 /* Import Roboto font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');*/
+
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 /* Slick carousel font */
 @font-face
