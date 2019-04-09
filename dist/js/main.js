@@ -114,6 +114,9 @@
         '    <path id="Path_10" data-name="Path 10" d="M2279.906,6258.238l5.64,5.64-5.64,5.64Z" transform="translate(-2279.906 -6258.238)" fill="#28aa69"/>\n' +
         '  </svg>\n' +
         '</div>',
+      arrows : false,
+      fade: true,
+      cssEase: 'linear'
       // nav: true,
       // center: true,
       // items: 1,

@@ -38,6 +38,11 @@ button {
   opacity: 0.35 !important;
 }
 
+.newsletter input:focus + button,
+.newsletter input:focus + svg {
+  background-color: rgba(40, 170, 105, 1);
+}
+
 .newsletter button {
   position: absolute;
   top: 0;
@@ -53,6 +58,7 @@ button {
 
   color: #fff;
   background-color: rgba(40, 170, 105, 0.66);
+  transition: background-color 0.25s;
 
   border-radius: 32px;
 
@@ -95,6 +101,7 @@ button {
   right: 0;
   padding: 22px 30px;
   background-color: rgba(40, 170, 105, 0.28);
+  transition: background-color 0.25s;
   border-radius: 32px;
   cursor: pointer;
 }
@@ -121,10 +128,7 @@ button {
   list-style: none;
   margin: 0;
   padding: 14px 44px;
-  border: #c8c8c8 solid 1px;
-  background-color: #fff;
   line-height: 0;
-  border-radius: 14px;
 }
 
 .slick-dots li {
@@ -427,6 +431,11 @@ button {
   background-color: #fff;
   border-radius: 25px;
   margin: 0 0.625vw;
+  transition: transform 0.25s;
+}
+
+.socials a:hover {
+  transform: scale(1.125);
 }
 
 a.github {

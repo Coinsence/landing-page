@@ -120,16 +120,19 @@ h1 + p {
 
 h2 + p {
   font-size: 21px;
+  line-height: 1.25;
   opacity: 0.75;
   margin-top: 5.74vh;
 }
 
 h3 + p {
   font-size: 18px;
+  line-height: 1.25;
 }
 
 h4 + p {
   font-size: 18px;
+  line-height: 1.25;
 }
 
 p.quote {
@@ -150,11 +153,23 @@ a {
 a.primary {
   color: #fff;
   background-color: #28aa69;
+  transition: color 0.25s ease-out, background-color 0.25s ease-out;
+}
+
+a.primary:hover {
+  color: #28aa69;
+  background-color: #fff;
 }
 
 a.secondary {
   color: #fff;
   background-color: #1e1e1e;
+  transition: color 0.25s ease-out, background-color 0.25s ease-out;
+}
+
+a.secondary:hover {
+  color: #1e1e1e;
+  background-color: #fff;
 }
 
 table thead td {
@@ -185,11 +200,21 @@ button {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+  p.quote {
+    font-size: 22px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
 
   h1 {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 65px;
   }
 
   h1 + p {

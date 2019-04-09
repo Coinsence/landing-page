@@ -128,7 +128,7 @@ nav {
 
 nav.active:not(.hamburger-active) {
   background-position: top;
-  box-shadow: #acacac 0 0 20px -8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 20px 40px;
 }
 
 nav.hamburger-active .brand,
@@ -145,11 +145,11 @@ nav > * {
 }
 
 nav .brand {
-  flex: 1;
+  margin-right: 34px;
 }
 
 nav .brand img {
-  padding-left: 1.40625vw;
+  padding: 0 28px;
 }
 
 nav .left {
@@ -159,6 +159,28 @@ nav .left {
 nav .left li {
   display: inline-block;
   margin: 0 1.46vw;
+}
+
+nav .left li span {
+  position: relative;
+}
+
+nav .left li span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  transition: width 0.125s ease-in-out;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #1e1e1e;
+}
+
+nav .left li a:hover span::before {
+  width: 100%;
 }
 
 nav .right {
@@ -284,17 +306,17 @@ section.values-1 .accordion {
 
 section.values-1 .accordion.first {
   background: url("../img/blocks-1/accordion/1.jpg") 50%;
-  background-size: 160vw;
+  /*background-size: 160vw;*/
 }
 
 section.values-1 .accordion.second {
   background: url("../img/blocks-1/accordion/2.jpg") 50%;
-  background-size: 160vw;
+  /*background-size: 160vw;*/
 }
 
 section.values-1 .accordion.third {
   background: url("../img/blocks-1/accordion/3.jpg") 50%;
-  background-size: 160vw;
+  /*background-size: 160vw;*/
 }
 
 section.values-1 .accordion:before {
@@ -315,7 +337,9 @@ section.values-1 .accordion .content {
   transition: background-color .25s;
 }
 
-section.values-1 .accordion .content:hover {
+section.values-1 .accordion.first .content:nth-child(1),
+section.values-1 .accordion.second .content:nth-child(2),
+section.values-1 .accordion.third .content:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.71);
 }
 
@@ -404,13 +428,15 @@ section.values-1 .accordion .content .content-body h4 {
 section.values-1 .accordion .content .content-body p {
   padding-top: 4vh;
   color: #fff;
-  transform: translateY(-100px);
+  transform: translateY(100px);
   opacity: 0;
 
   transition: transform .25s, opacity .25s;
 }
 
-section.values-1 .accordion .content:hover .content-body p {
+section.values-1 .accordion.first .content:nth-child(1) .content-body p,
+section.values-1 .accordion.second .content:nth-child(2) .content-body p,
+section.values-1 .accordion.third .content:nth-child(3) .content-body p {
   transform: translateY(0);
   opacity: 1;
 }
@@ -430,7 +456,9 @@ section.values-1 .accordion .content .content-footer a {
   transition: transform .25s, opacity .25s;
 }
 
-section.values-1 .accordion .content:hover .content-footer a {
+section.values-1 .accordion.first .content:nth-child(1) .content-footer a,
+section.values-1 .accordion.second .content:nth-child(2) .content-footer a,
+section.values-1 .accordion.third .content:nth-child(3) .content-footer a {
   transform: translateY(0);
   opacity: 1;
 }
@@ -572,7 +600,7 @@ section.testimonials .testimonial .info .person h6.name {
 
 section.testimonials .testimonial .cover img {
   width: 45vw;
-  padding-right: 5vw;
+  /*padding-right: 5vw;*/
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -679,14 +707,20 @@ footer .links a {
 footer .links span {
   color: #acacac;
   opacity: 0.5;
+  font-family: 'Carnas', sans-serif;
 }
 
 
 
 @media only screen and (max-width: 1024px) {
 
+  nav .brand {
+    flex: 1;
+    align-self: flex-end;
+  }
+
   nav .brand img {
-    padding-left: 4.8828125vw
+    padding: 0 50px;
   }
 
   nav .right {
@@ -699,7 +733,8 @@ footer .links span {
 
   nav .hamburger {
     display: block;
-    padding-right: 6vw;
+    margin-right: 6vw;
+    align-self: flex-end;
   }
 
   section.landing .scroll {
@@ -773,6 +808,8 @@ footer .links span {
 
   .hamburger-popup .socials a {
     margin: 0 2vw;
+    height: 40px;
+    width: 40px;
   }
 
 }
@@ -780,9 +817,9 @@ footer .links span {
 
 @media only screen and (max-width: 768px) {
 
-  nav .brand img {
-    padding-left: 6.510416666666667vw
-  }
+  /*nav .brand img {*/
+    /*padding-left: 6.510416666666667vw*/
+  /*}*/
 
   section.landing {
     padding: 10vh 12vw;
@@ -878,8 +915,12 @@ footer .links span {
 
 
 
+  section.values .value {
+    height: 100vh;
+  }
+
   section.values .value.large {
-    height: 124vh;
+    height: 142vh;
   }
 
   section.values .value > * {
