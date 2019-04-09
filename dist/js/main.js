@@ -36,10 +36,14 @@
 
   verifyScroll();
 
+  AOS.init({
+    duration: 400
+  });
+
   $(document).ready(function () {
 
     // Initialize landing bg
-    // $('section.landing').removeClass('hidden-bg');
+    $('section.landing').removeClass('hidden-bg');
 
     // Initialize parallax
     $('.img-parallax').each(function(){
@@ -123,6 +127,8 @@
     });
 
     verifyScroll();
+
+    AOS.refresh();
 
     $('.hamburger').on('click', function () {
       toggleHamburgerPopup();

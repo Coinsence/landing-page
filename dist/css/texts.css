@@ -94,15 +94,25 @@ h6.of-contact {
   text-transform: uppercase;
 }
 
-h1 span {
-  color: #28aa69;
-}
-
-h2 span {
-  color: #28aa69;
-}
-
+h1 span,
 h3 span {
+  display: inline-block;
+}
+
+h1 span:first-of-type,
+h3 span:first-of-type {
+  margin-right: 18px;
+}
+
+h1 span.colored {
+  color: #28aa69;
+}
+
+h2 span.colored {
+  color: #28aa69;
+}
+
+h3 span.colored {
   color: #28aa69;
 }
 
@@ -153,6 +163,10 @@ a {
 a.primary {
   color: #fff;
   background-color: #28aa69;
+  -webkit-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out, background-color 0.25s ease-out;
   transition: color 0.25s ease-out, background-color 0.25s ease-out;
 }
 
@@ -164,6 +178,10 @@ a.primary:hover {
 a.secondary {
   color: #fff;
   background-color: #1e1e1e;
+  -webkit-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out, background-color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out, background-color 0.25s ease-out;
   transition: color 0.25s ease-out, background-color 0.25s ease-out;
 }
 
@@ -201,6 +219,15 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+
+  h2 {
+    font-size: 70px;
+  }
+
+  h4 + p {
+    font-size: 14px;
+  }
+
   p.quote {
     font-size: 22px;
   }

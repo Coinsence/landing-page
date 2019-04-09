@@ -58,6 +58,11 @@ button {
 
   color: #fff;
   background-color: rgba(40, 170, 105, 0.66);
+
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -ms-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
 
   border-radius: 32px;
@@ -101,6 +106,10 @@ button {
   right: 0;
   padding: 22px 30px;
   background-color: rgba(40, 170, 105, 0.28);
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -ms-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
   border-radius: 32px;
   cursor: pointer;
@@ -229,9 +238,10 @@ button {
 }
 
 .hamburger .hamburger-inner {
-  top: 50%;
+  top: 16px;
+  /*top: 50%;*/
   display: block;
-  margin-top: -2px;
+  /*margin-top: -2px;*/
 }
 
 .hamburger .hamburger-inner,
@@ -242,7 +252,7 @@ button {
   height: 4px;
   transition-timing-function: ease;
   transition-duration: .15s;
-  transition-property: none;
+  transition-property: transform;
   border-radius: 4px;
   background-color: #1d1d1d;
   left: calc(50% - 12px);
@@ -255,11 +265,15 @@ button {
 }
 
 .hamburger .hamburger-inner:before {
-  top: -8px;
+  top: 8px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform,opacity;
 }
 
 .hamburger .hamburger-inner:after {
-  bottom: -8px;
+  top: 16px;
+  /*bottom: -8px;*/
 }
 
 .hamburger.active .hamburger-box {
@@ -273,17 +287,18 @@ button {
 }
 
 .hamburger.active .hamburger-inner {
-  transform: rotate(45deg);
+  transform: translate3d(0,8px,0) rotate(45deg);
 }
 
 .hamburger.active .hamburger-inner:before {
-  top: 0;
+
+  transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
   opacity: 0;
+
 }
 
 .hamburger.active .hamburger-inner:after {
-  bottom: 0;
-  transform: rotate(-90deg);
+  transform: translate3d(0,-16px,0) rotate(-90deg);
 }
 
 .hamburger-popup {
@@ -431,6 +446,10 @@ button {
   background-color: #fff;
   border-radius: 25px;
   margin: 0 0.625vw;
+  -webkit-transition: transform 0.25s;
+  -moz-transition: transform 0.25s;
+  -ms-transition: transform 0.25s;
+  -o-transition: transform 0.25s;
   transition: transform 0.25s;
 }
 
