@@ -1003,7 +1003,7 @@ footer .links span {
 
 
   section.values .value {
-    height: 100vh;
+    height: 114vh;
   }
 
   section.values .value.large {
@@ -1015,9 +1015,25 @@ footer .links span {
     height: 50%;
   }
 
+  section.values .value .text {
+    padding: 3vh 0;
+  }
+
+  section.values .value .text .objective {
+    margin-top: 2vh;
+  }
+
+  section.values .value .text h2 + p {
+    margin-top: 1.74vh;
+  }
+
   section.values .value .img-parallax {
-    transform: translate(0,-20%);
     width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   section.testimonials .testimonial .info {
@@ -1063,6 +1079,10 @@ footer .links span {
 
   section.values-1 .accordion .content {
     padding: 4vh 1.85vw;
+  }
+
+  section.values .value {
+    height: 114vh;
   }
 
   section.info .links td {
