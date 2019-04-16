@@ -20,7 +20,7 @@ h1 {
 h2 {
   font-family: 'Carnas', sans-serif;
   font-weight: bold;
-  font-size: 85px;
+  font-size: 75px;
 }
 
 h3 {
@@ -221,7 +221,7 @@ button {
 @media only screen and (max-width: 1024px) {
 
   h2 {
-    font-size: 70px;
+    font-size: 54px;
   }
 
   h4 + p {

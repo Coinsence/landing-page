@@ -72,7 +72,7 @@
           }
           img.css({
             top: imgPercent + '%',
-            transform: 'translate(0, -' + imgPercent + '%)'
+            transform: 'translate(0, -' + imgPercent + '%) scale(1.25)'
           });
         }
         else {

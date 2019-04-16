@@ -194,6 +194,15 @@ nav .left li a:hover span::before {
   width: 100%;
 }
 
+nav .left li a i {
+  margin-left: 4px;
+}
+
+nav .left li a i img {
+  width: 12px;
+  vertical-align: initial;
+}
+
 nav .right {
   flex: 1;
   height: 100%;
@@ -209,6 +218,10 @@ nav .right li a {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+nav .right li a.primary {
+  width: 54px;
 }
 
 nav .right li a.primary:hover::before {
@@ -241,7 +254,7 @@ section.landing {
 }
 
 section.landing.hidden-bg::before {
-  background-position: 100% -500%;
+  background-position: 60vw 50vh;
   opacity: 0;
 }
 
@@ -255,7 +268,7 @@ section.landing::before {
   top: 0;
   left: 0;
   z-index: -1;
-  background-position: 60vw;
+  background-position: 60vw -4vh;
   background-size: auto;
   background-repeat: no-repeat;
   -webkit-transition: opacity 1s .25s, background 1s;
@@ -267,7 +280,7 @@ section.landing::before {
 }
 
 section.landing h1 {
-  /*padding-top: 8vh;*/
+  padding-top: 8vh;
 }
 
 section.landing .newsletter {
@@ -600,8 +613,8 @@ section.values .value .img-container {
 section.values .value .img-parallax {
 
   position: absolute;
-  top: 0;
-  transform: translate(0,0);
+  top: 50%;
+  transform: translate(0,-50%) scale(1.25);
   pointer-events: none;
 }
 
@@ -927,15 +940,18 @@ footer .links span {
   }
 
   section.values-1 .accordion .content:nth-child(1) {
-    background: url("../img/blocks-1/accordion/1-t.jpg") 50%;
+    background: url("../img/blocks-1/accordion/1.jpg") 50%;
+    background-size: 100%;
   }
 
   section.values-1 .accordion .content:nth-child(2) {
-    background: url("../img/blocks-1/accordion/2-t.jpg") 50% 33%;
+    background: url("../img/blocks-1/accordion/2.jpg") 50% 33%;
+    background-size: 100%;
   }
 
   section.values-1 .accordion .content:nth-child(3) {
-    background: url("../img/blocks-1/accordion/3-t.jpg") 50% 25%;
+    background: url("../img/blocks-1/accordion/3.jpg") 50% 25%;
+    background-size: 100%;
   }
 
   section.values-1 .accordion .content {
@@ -1034,6 +1050,7 @@ footer .links span {
     left: 0;
     right: 0;
     margin: auto;
+    transform: scale(1);
   }
 
   section.testimonials .testimonial .info {
