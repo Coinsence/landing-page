@@ -787,7 +787,7 @@ footer .links a {
 footer .links span {
   color: #acacac;
   opacity: 0.5;
-  font-family: 'Carnas', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -867,7 +867,7 @@ footer .links span {
   }
 
   .hamburger-popup .links a {
-    font-family: 'Carnas', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 40px;
     color: #1e1e1e;
@@ -885,7 +885,7 @@ footer .links span {
   }
 
   .hamburger-popup .info a {
-    font-family: 'Carnas', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 15px;
     color: #fff;
