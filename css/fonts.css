@@ -11,8 +11,8 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url('./vendor/fonts/slick.eot');
-  src: url('./vendor/fonts/slick.eot?#iefix') format('embedded-opentype'), url('./vendor/fonts/slick.woff') format('woff'), url('./vendor/fonts/slick.ttf') format('truetype'), url('./vendor/fonts/slick.svg#slick') format('svg');
+  src: url('vendor/fonts/slick.eot');
+  src: url('vendor/fonts/slick.eot?#iefix') format('embedded-opentype'), url('vendor/fonts/slick.woff') format('woff'), url('vendor/fonts/slick.ttf') format('truetype'), url('vendor/fonts/slick.svg#slick') format('svg');
 }
 
 /* Carnas Bold font */
