@@ -268,7 +268,7 @@ section.landing::before {
   top: 0;
   left: 0;
   z-index: -1;
-  background-position: 60vw -4vh;
+  background-position: 60vw -6vh;
   background-size: auto;
   background-repeat: no-repeat;
   -webkit-transition: opacity 1s .25s, background 1s;
@@ -281,6 +281,10 @@ section.landing::before {
 
 section.landing h1 {
   padding-top: 8vh;
+}
+
+section.landing h1 + h1 {
+  padding-top: 0;
 }
 
 section.landing .newsletter {
@@ -872,6 +876,14 @@ footer .links span {
     font-size: 40px;
     color: #1e1e1e;
     text-transform: uppercase;
+  }
+
+  .hamburger-popup .links a i {
+    margin-left: 4px;
+  }
+
+  .hamburger-popup .links a i img {
+    margin-bottom: 6px;
   }
 
   .hamburger-popup .info {
